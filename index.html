@@ -1,27 +1,26 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>RICKYVERSE | Developer Portfolio</title>
-
+    <meta name="description" content="Portfolio of Ricky Joshua T. Orillano, a BS Information Technology student at National University - Fairview.">
+    <meta property="og:title" content="RICKYVERSE | Developer Portfolio">
+    <meta property="og:description" content="Exploring technology, building solutions, and continuously learning one line of code at a time.">
+    <meta property="og:type" content="website">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
 
 <body>
+    <a href="#main" class="skip-link">Skip to content</a>
 
-    <!-- Navigation -->
     <header>
         <nav class="navbar container">
-            <a href="#home" class="logo">RICKY<span>VERSE.</span></a>
+            <a href="#home" class="logo">RICKY<span class="accent">VERSE.</span></a>
 
-            <button class="menu-toggle" id="menu-toggle"
-                aria-label="Toggle navigation" aria-expanded="false">
-                ☰
-            </button>
+            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">☰</button>
 
             <ul class="nav-links" id="nav-links">
                 <li><a href="#home">Home</a></li>
@@ -29,47 +28,41 @@
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#education">Education</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#goals">Goals</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
+    <main id="main">
 
-        <!-- Home -->
         <section class="hero container" id="home">
             <div class="hero-content">
                 <p class="eyebrow">WELCOME TO MY DIGITAL SPACE</p>
-
-                <h1>Hi, I'm Ricky.<br>
-                    An aspiring <span>IT Professional.</span>
-                </h1>
-
+                <h1>Hi, I'm Ricky.<br>An aspiring <span class="accent">IT Professional.</span></h1>
                 <p class="hero-description">
                     Exploring technology, building solutions,
                     and continuously learning one line of code at a time.
                 </p>
-
                 <div class="hero-buttons">
-                    <a href="#projects" class="btn primary">Explore My Work</a>
-                    <a href="#contact" class="btn secondary">Contact Me</a>
+                    <a href="#projects" class="btn btn-primary">Explore My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                    <!-- TODO: put your resume PDF in this folder and keep this name -->
+                    <a href="resume.pdf" class="btn btn-secondary" download>Download Resume</a>
                 </div>
             </div>
 
             <div class="hero-visual">
                 <div class="profile-frame">
-                    <img src="profile.jpg"
-                         alt="Portrait of Ricky Joshua Orillano">
+                    <img src="profile.jpg" width="260" height="300" alt="Portrait of Ricky Joshua Orillano">
                 </div>
                 <p class="profile-caption">BS Information Technology Student</p>
             </div>
         </section>
 
-        <!-- About -->
         <section class="section container" id="about">
             <p class="eyebrow">GET TO KNOW ME</p>
-            <h2>About <span>Me</span></h2>
-
+            <h2>About <span class="accent">Me</span></h2>
             <div class="about-content">
                 <p>
                     Hello! I'm Ricky Joshua T. Orillano, an Information
@@ -77,13 +70,11 @@
                     I am passionate about technology, programming,
                     and understanding how computers work.
                 </p>
-
                 <p>
                     I enjoy exploring both hardware and software,
                     from troubleshooting computer components to
                     developing simple applications and websites.
                 </p>
-
                 <p>
                     As a student, I believe that learning takes time.
                     I continuously challenge myself to improve my
@@ -92,11 +83,9 @@
             </div>
         </section>
 
-        <!-- Skills -->
         <section class="section container" id="skills">
             <p class="eyebrow">WHAT I'M LEARNING</p>
-            <h2>Technical <span>Skills</span></h2>
-
+            <h2>Technical <span class="accent">Skills</span></h2>
             <div class="skills-grid">
                 <div class="skill-card">HTML</div>
                 <div class="skill-card">CSS</div>
@@ -104,83 +93,76 @@
                 <div class="skill-card">Python</div>
                 <div class="skill-card">Java</div>
                 <div class="skill-card">SQL</div>
-                <div class="skill-card">Git & GitHub</div>
+                <div class="skill-card">Git &amp; GitHub</div>
                 <div class="skill-card">Cisco Packet Tracer</div>
             </div>
         </section>
 
-        <!-- Education -->
         <section class="section container" id="education">
             <p class="eyebrow">MY ACADEMIC JOURNEY</p>
-            <h2>Educational <span>Background</span></h2>
-
+            <h2>Educational <span class="accent">Background</span></h2>
             <div class="table-wrapper">
                 <table>
-                    <tr>
-                        <th>Category</th>
-                        <th>Details</th>
-                    </tr>
-                    <tr>
-                        <td>School</td>
-                        <td>National University - Fairview</td>
-                    </tr>
-                    <tr>
-                        <td>Program</td>
-                        <td>Bachelor of Science in Information Technology</td>
-                    </tr>
-                    <tr>
-                        <td>Year Level</td>
-                        <td>2nd Year College</td>
-                    </tr>
+                    <caption class="sr-only">Educational background</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Category</th>
+                            <th scope="col">Details</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>School</td><td>National University - Fairview</td></tr>
+                        <tr><td>Program</td><td>Bachelor of Science in Information Technology</td></tr>
+                        <tr><td>Year Level</td><td>2nd Year College</td></tr>
+                    </tbody>
                 </table>
             </div>
         </section>
 
-        <!-- Projects -->
         <section class="section container" id="projects">
             <p class="eyebrow">THINGS I'VE WORKED ON</p>
-            <h2>My <span>Projects</span></h2>
+            <h2>My <span class="accent">Projects</span></h2>
 
             <div class="projects-grid">
-
                 <article class="project-card">
                     <p class="project-number">01 / PYTHON</p>
                     <h3>Concert Attendance Monitoring System</h3>
-                    <p>
-                        A Python-based project designed to record
-                        concert attendees and organize attendance
-                        information using dictionaries.
+                    <p class="project-desc">
+                        A Python-based project designed to record concert
+                        attendees and organize attendance information using dictionaries.
                     </p>
+                    <p class="tech-tags">Python · Dictionaries</p>
+                    <!-- TODO: replace with your real repo link -->
+                    <a class="project-link" href="https://github.com/YOUR-USERNAME/concert-attendance" target="_blank" rel="noopener">View on GitHub →</a>
                 </article>
 
                 <article class="project-card">
                     <p class="project-number">02 / JAVA</p>
                     <h3>Employee Attendance System</h3>
-                    <p>
-                        A Java Swing application that records
-                        employee attendance and stores information
-                        using CSV files.
+                    <p class="project-desc">
+                        A Java Swing application that records employee
+                        attendance and stores information using CSV files.
                     </p>
+                    <p class="tech-tags">Java · Swing · CSV</p>
+                    <a class="project-link" href="https://github.com/rickjshua/Attendance-System.git" target="_blank" rel="noopener">View on GitHub →</a>
                 </article>
 
                 <article class="project-card">
                     <p class="project-number">03 / DATABASE</p>
                     <h3>Bank Database ERD</h3>
-                    <p>
-                        A database design project that illustrates
-                        the relationships between entities in
-                        a banking system.
+                    <p class="project-desc">
+                        A database design project that illustrates the
+                        relationships between entities in a banking system.
                     </p>
+                    <p class="tech-tags">ERD · SQL</p>
+                    <a class="project-link" href="https://github.com/YOUR-USERNAME/bank-database-erd" target="_blank" rel="noopener">View on GitHub →</a>
                 </article>
-
             </div>
         </section>
 
-        <!-- Career Goals -->
         <section class="section container" id="goals">
             <p class="eyebrow">WHERE I'M HEADED</p>
-            <h2>Career <span>Goals</span></h2>
-
+            <h2>Career <span class="accent">Goals</span></h2>
             <ol class="goals-list">
                 <li>Strengthen my programming and problem-solving skills.</li>
                 <li>Build meaningful projects and gain practical experience.</li>
@@ -189,46 +171,41 @@
             </ol>
         </section>
 
-        <!-- Contact -->
         <section class="section container" id="contact">
             <p class="eyebrow">LET'S CONNECT</p>
-            <h2>Get In <span>Touch</span></h2>
+            <h2>Get In <span class="accent">Touch</span></h2>
 
             <p class="contact-description">
                 Have a question or want to connect? Feel free to reach out!
             </p>
 
-            <a class="email-link"
-               href="mailto:orillanoricky84@gmail.com">
-                orillanoricky84@gmail.com
-            </a>
+            <a class="email-link" href="mailto:orillanoricky84@gmail.com">orillanoricky84@gmail.com</a>
 
-            <form id="contact-form">
+            <ul class="social-links">
+                <!-- TODO: replace with your real profiles -->
+                <li><a href="https://github.com/rickjshua" target="_blank" rel="noopener">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/ricky-joshua-orillano-a1649138b" target="_blank" rel="noopener">LinkedIn</a></li>
+            </ul>
+
+ <form id="contact-form">
                 <label for="name">Your Name</label>
-                <input type="text" id="name"
-                       placeholder="Enter your name" required>
-
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+ 
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required>
+ 
                 <label for="message">Your Message</label>
-                <textarea id="message"
-                          placeholder="Write your message..."
-                          required></textarea>
-
-                <button type="submit" class="btn primary">
-                    Send Message
-                </button>
-
+                <textarea id="message" name="message" placeholder="Write your message..." required></textarea>
+ 
+                <button type="submit" class="btn btn-primary">Send Message</button>
                 <p id="form-message" role="status"></p>
             </form>
         </section>
-
+ 
     </main>
 
-    <!-- Footer -->
     <footer>
-        <p>
-            © <span id="year"></span> Ricky Joshua T. Orillano.
-            Built with curiosity and passion.
-        </p>
+        <p>© <span id="year"></span> Ricky Joshua T. Orillano. Built with curiosity and passion.</p>
         <p>Explore. Build. Learn. Create.</p>
     </footer>
 
